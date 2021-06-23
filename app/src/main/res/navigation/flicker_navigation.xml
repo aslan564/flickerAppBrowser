@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flicker_navigation"
+    app:startDestination="@id/flicker_fragment">
+
+    <fragment
+        android:id="@+id/flicker_fragment"
+        android:label="Fragment Flicker"
+        tools:layout="@layout/fragment_flicker"
+        android:name="aslan.aslanov.flickrappbrowser.ui.fragment.flickrList.FlickerFragment">
+        <action
+            android:id="@+id/action_flicker_fragment_to_preview_fragment"
+            app:destination="@+id/flicker_fragment_preview" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flicker_fragment_preview"
+        android:name="aslan.aslanov.flickrappbrowser.ui.fragment.flickeritem.PreviewImageFragment"
+        android:label="Fragment Preview"
+        tools:layout="@layout/fragment_image_preview" >
+        <argument
+            android:name="imageFlicker"
+            app:argType="aslan.aslanov.flickrappbrowser.model.entity.ImageLocal"
+            app:nullable="true" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Flickr Browser</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_flicker">Image Flicker</string>
+    <string name="title_image">Title Image</string>
+    <string name="albums">Albums</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="search">Search</string>
+    <string name="save_image">Save Image</string>
+    <string name="followed">Image Loaded</string>
+    <string name="database_save_image">database save image</string>
+    <string name="enter_search_tags">Enter Photo tags</string>
+    <string name="error">Not your Internet connection</string>
+    <string name="loading">Loading…</string>
+</resources>
